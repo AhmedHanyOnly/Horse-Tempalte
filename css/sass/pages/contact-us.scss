@@ -21,7 +21,7 @@
       }
     }
   }
-  .control{
+  .control {
     direction: rtl;
   }
   .inputs {
@@ -30,6 +30,9 @@
     border-radius: 10px;
     width: 500px;
     margin: 50px auto;
+    @include maxWidth(sm) {
+      width: 350px;
+    }
     .btn-mess {
       padding: 10px 30px;
       background-color: $sec-color;
@@ -42,6 +45,9 @@
     margin: 50px auto;
     border-radius: 10px;
     width: 500px;
+    @include maxWidth(sm) {
+      width: 350px;
+    }
     h3 {
       width: 100%;
       padding: 10px;
