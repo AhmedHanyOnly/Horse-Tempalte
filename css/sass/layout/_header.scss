@@ -7,7 +7,7 @@
     .logo {
       z-index: 900;
 
-      width: 151px;
+      width: 100px;
       @include maxWidth(md) {
         width: 100px;
       }
@@ -41,6 +41,7 @@
           margin: 0;
           align-items: center;
           list-style: none;
+          // opacity: 0;
           .item {
             display: flex;
             align-items: center;

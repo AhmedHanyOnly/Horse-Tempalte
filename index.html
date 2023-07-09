@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- Main Faile Css  -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- aos file -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -77,15 +79,18 @@
               </button>
             </li>
             <li>
-              <a href="" class="link active"> الرئيسية </a>
+              <a href="/" class="link active"> الرئيسية </a>
             </li>
             <li>
-              <a href="" class="link"> من نحن </a>
+              <a href="/pages/about-us.html" class="link"> من نحن </a>
             </li>
             <li>
-              <a href="" class="link"> خدماتنا </a>
+              <a href="/pages/service.html" class="link"> خطط الاشتراك </a>
             </li>
-            <li class="dropdown">
+            <li>
+              <a href="/pages/contact-us.html" class="link"> أتصل بنا </a>
+            </li>
+            <!-- <li class="dropdown">
               <a
                 href=""
                 class="link dropdown-toggle"
@@ -111,8 +116,8 @@
                   <a class="dropdown-item" href="#">صفحة 404</a>
                 </li>
               </ul>
-            </li>
-            <li class="dropdown">
+            </li> -->
+            <!-- <li class="dropdown">
               <a
                 href=""
                 class="link dropdown-toggle"
@@ -131,8 +136,8 @@
                 <li>
                   <a class="dropdown-item" href="#">مدونة واحدة</a>
                 </li>
-              </ul>
-            </li>
+              </ul> -->
+            <!-- </li> -->
             <li>
               <a href="./pages/contact-us.html" class="link"> أتصل بنا </a>
             </li>
@@ -145,9 +150,9 @@
     </header>
     <!-- End Header -->
     <!-- Start Landing -->
-    <section class="section-landing">
+    <section class="section-landing" >
       <div class="container-xl">
-        <div class="box-text">
+        <div class="box-text" data-aos="zoom-in-up" data-aos-duration="600">
           <h2 class="title-small">مرحبا بك في الأسطبل</h2>
           <h1 class="title">نحن نقدم أفضل الفروسية وركوب الخيل</h1>
           <h1 class="content">
@@ -158,7 +163,7 @@
           </h1>
           <a href="" class="main-btn"> ابداء الأن </a>
         </div>
-        <div class="box-video">
+        <div class="box-video" data-aos="fade-right" data-aos-delay="500">
           <p>شاهد</p>
           <button
             class="btn-vid"
@@ -205,7 +210,7 @@
       </div>
     </div>
     <!-- start top services -->
-    <section class="services">
+    <section class="services" data-aos="fade-up">
       <div class="container">
         <div class="con-services row d-flex justify-content-between">
           <div class="col-12 col-lg-4 col-md-6">
@@ -252,7 +257,7 @@
     </section>
     <!-- end top services -->
     <!-- start bottom services -->
-    <section class="bottom-services">
+    <section class="bottom-services" data-aos="fade-left">
       <div class="container">
         <div class="con-bt-services">
           <div class="row">
@@ -331,7 +336,7 @@
     </section>
     <!-- start bottom services -->
     <!-- start footer -->
-    <section class="footer">
+    <section class="footer" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 col-lg-4">
@@ -408,6 +413,11 @@
       </div>
     </section>
     <!-- end footer -->
+    <!-- aos file -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     <!-- Js Files -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>

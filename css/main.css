@@ -35,7 +35,7 @@ button {
 }
 .main-header .container-xl .logo {
   z-index: 900;
-  width: 151px;
+  width: 100px;
 }
 @media (max-width: 991.98px) {
   .main-header .container-xl .logo {
@@ -265,7 +265,7 @@ button {
 }
 
 .section-landing {
-  background-image: url("../img/landing.jpg");
+  background-image: url("../../../img/landing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -511,7 +511,6 @@ button {
 }
 
 .con-bt-services {
-  min-height: 100vh;
   margin: 200px 0;
 }
 .con-bt-services .serve-card .img-serve {
@@ -565,6 +564,34 @@ button {
   border-radius: 5px;
   margin: 25px;
   width: 65%;
+  position: relative;
+}
+.con-bt-services .serve-card .box-text .price-text .price-sub::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background-color: #ffc251;
+  left: 0;
+  bottom: 0;
+  transition: 0.6s;
+  z-index: -1;
+}
+.con-bt-services .serve-card .box-text .price-text .price-sub:hover::after {
+  height: 100%;
+}
+.con-bt-services .serve-card .box-text .price-text .price-sub:hover .price {
+  color: #000;
+}
+.con-bt-services .serve-card .box-text .price-text .price-sub:hover .price-sub {
+  color: #000;
+  border-color: #000;
+}
+.con-bt-services .serve-card .box-text .price-text .price-sub:hover .icon-box {
+  background-color: #fff;
+}
+.con-bt-services .serve-card .box-text .price-text .price-sub:hover .icon-box .icon-serve {
+  color: #ffc251;
 }
 .con-bt-services .serve-card .box-text .icon-box {
   margin: 0 auto;
@@ -579,34 +606,6 @@ button {
 .con-bt-services .serve-card .box-text .icon-box .icon-serve {
   font-size: 40px;
   margin: 0 auto;
-}
-.con-bt-services .serve-card .box-text::after {
-  content: "";
-  position: absolute;
-  border-radius: 10px;
-  width: 100%;
-  height: 0;
-  background-color: #ffc251;
-  left: 0;
-  bottom: 0;
-  transition: 0.6s;
-  z-index: -1;
-}
-.con-bt-services .serve-card .box-text:hover::after {
-  height: 100%;
-}
-.con-bt-services .serve-card .box-text:hover .price {
-  color: #000;
-}
-.con-bt-services .serve-card .box-text:hover .price-sub {
-  color: #000;
-  border-color: #000;
-}
-.con-bt-services .serve-card .box-text:hover .icon-box {
-  background-color: #fff;
-}
-.con-bt-services .serve-card .box-text:hover .icon-box .icon-serve {
-  color: #ffc251;
 }
 @media screen and (max-width: 1300px) {
   .con-bt-services .serve-card .img-serve {
@@ -668,11 +667,11 @@ button {
 }
 
 .contact {
-  min-height: 100vh;
+  min-height: 40vh;
 }
 .contact .landing {
   position: relative;
-  z-index: 1;
+  z-index: 5;
 }
 .contact .landing::before {
   position: absolute;
@@ -749,6 +748,8 @@ button {
   background-color: #fff;
   margin: 5px 0;
   font-size: 18px;
+  display: flex;
+  align-items: center;
 }
 .contact .contact-text .bg-contact span .icon-contact {
   padding: 15px;
@@ -763,6 +764,7 @@ button {
   color: #fff;
   direction: ltr;
   padding: 100px 20px 50px;
+  margin-top: 100px;
 }
 .footer .con-footer {
   position: relative;
@@ -823,4 +825,218 @@ button {
 .footer .con-footer ul .item span {
   font-size: 18px;
   margin: 0 20px;
+}
+
+.con-bt-services {
+  margin: 200px 0;
+}
+.con-bt-services .serve-card .img-serve {
+  width: 400px;
+  z-index: -1;
+}
+.con-bt-services .serve-card .box-text {
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 0 20px;
+  transform: translateY(-50px);
+  box-shadow: 0 0 10px #ddd;
+  width: 350px;
+  position: relative;
+  z-index: 2;
+}
+.con-bt-services .serve-card .box-text h3 {
+  padding: 10px;
+  z-index: 3;
+  padding-top: 0;
+}
+.con-bt-services .serve-card .box-text p {
+  padding: 10px;
+  line-height: 1.5;
+  z-index: 3;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 10px 0;
+}
+.con-bt-services .serve-card .box-text .price-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.con-bt-services .serve-card .box-text .price-text .price {
+  padding: 20px 0 20px 10px;
+  line-height: 1.5;
+  font-size: 24px;
+  z-index: 3;
+  font-weight: 600;
+  color: #ffc251;
+  margin-top: 10px;
+}
+.con-bt-services .serve-card .box-text .price-text .price-sub {
+  padding: 3px;
+  line-height: 1.5;
+  font-size: 24px;
+  z-index: 3;
+  font-weight: 600;
+  border: 1px solid #ffc251;
+  border-radius: 5px;
+  margin: 25px;
+  width: 65%;
+  position: relative;
+}
+.con-bt-services .serve-card .box-text .price-text .price-sub::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background-color: #ffc251;
+  left: 0;
+  bottom: 0;
+  transition: 0.6s;
+  z-index: -1;
+}
+.con-bt-services .serve-card .box-text .price-text .price-sub:hover::after {
+  height: 100%;
+}
+.con-bt-services .serve-card .box-text .price-text .price-sub:hover .price {
+  color: #000;
+}
+.con-bt-services .serve-card .box-text .price-text .price-sub:hover .price-sub {
+  color: #000;
+  border-color: #000;
+}
+.con-bt-services .serve-card .box-text .price-text .price-sub:hover .icon-box {
+  background-color: #fff;
+}
+.con-bt-services .serve-card .box-text .price-text .price-sub:hover .icon-box .icon-serve {
+  color: #ffc251;
+}
+.con-bt-services .serve-card .box-text .icon-box {
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 30px;
+  width: 100px;
+  z-index: 1;
+  height: 100px;
+  transform: translateY(-20px);
+  background-color: #ffc251;
+}
+.con-bt-services .serve-card .box-text .icon-box .icon-serve {
+  font-size: 40px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1300px) {
+  .con-bt-services .serve-card .img-serve {
+    width: 350px;
+    z-index: -1;
+  }
+  .con-bt-services .serve-card .box-text {
+    width: 300px;
+  }
+  .con-bt-services .serve-card .box-text .price-text .price {
+    font-size: 16pxpx;
+    padding-bottom: 0;
+    margin-top: 20px;
+  }
+  .con-bt-services .serve-card .box-text .price-text .price-sub {
+    font-size: 20px;
+    margin: 40px 20px;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .con-bt-services .serve-card .img-serve {
+    width: 300px;
+    z-index: -1;
+  }
+  .con-bt-services .serve-card .box-text {
+    width: 250px;
+  }
+  .con-bt-services .serve-card .box-text .price-text .price {
+    font-size: 16pxpx;
+    padding-bottom: 0;
+  }
+  .con-bt-services .serve-card .box-text .price-text .price-sub {
+    font-size: 20px;
+    margin: 40px 20px;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .con-bt-services .serve-card {
+    margin-right: 20px;
+  }
+  .con-bt-services .serve-card .img-serve {
+    width: 300px;
+    z-index: -1;
+  }
+  .con-bt-services .serve-card .box-text {
+    width: 250px;
+  }
+  .con-bt-services .serve-card .box-text .price-text .price {
+    font-size: 16pxpx;
+    padding-bottom: 0;
+  }
+  .con-bt-services .serve-card .box-text .price-text .price-sub {
+    font-size: 20px;
+    margin: 40px 20px;
+    width: 55%;
+  }
+}
+
+.about-us span {
+  padding: 10px 25px;
+  font-size: 35px;
+  background-color: #ffc251;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 900;
+}
+.about-us .image {
+  width: 400px;
+  border: 5px solid #ffc251;
+  position: relative;
+  z-index: 5;
+  border-radius: 5px;
+}
+.about-us .image::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.about-us .image img {
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+}
+.about-us .text h3 {
+  font-size: 35px;
+  font-weight: 800;
+  padding: 10px;
+}
+.about-us .text p {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 10px;
+  line-height: 2;
+}
+@media (max-width: 767.98px) {
+  .about-us span {
+    padding: 10px 25px;
+    font-size: 25px;
+  }
+  .about-us .image {
+    width: 250px;
+  }
+  .about-us .text h3 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .about-us .text p {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

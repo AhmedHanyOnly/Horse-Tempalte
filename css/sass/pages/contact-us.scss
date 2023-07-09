@@ -1,5 +1,5 @@
 .contact {
-  min-height: 100vh;
+  min-height: 40vh;
   .landing {
     // height: 200px;
     @include overlay-before(#000, 0.3);
@@ -63,6 +63,8 @@
         background-color: #fff;
         margin: 5px 0;
         font-size: 18px;
+        display: flex;
+        align-items: center;
         .icon-contact {
           padding: 15px;
           color: #fff;
