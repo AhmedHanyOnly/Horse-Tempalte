@@ -7,13 +7,13 @@
     <meta name="description" content="Horse" />
     <title>Horse</title>
     <!-- Normalize -->
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
     <!-- Main Faile Css  -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <!-- aos file -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Font Google -->
@@ -75,170 +75,109 @@
       </div>
     </header>
     <!-- End Header -->
-    <!-- Start Landing -->
-    <section class="section-landing">
-      <div class="container-xl">
-        <div class="box-text" data-aos="zoom-in-up" data-aos-duration="600">
-          <h2 class="title-small">مرحبا بك في الأسطبل</h2>
-          <h1 class="title">نحن نقدم أفضل الفروسية وركوب الخيل</h1>
-          <h1 class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            ipsa placeat cupiditate accusantium, iure libero rerum. Consequatur
-            aspernatur, laboriosam eligendi impedit vero beatae porro quam eaque
-            illo ratione hic? Modi.
-          </h1>
-          <a href="" class="main-btn"> ابداء الأن </a>
+    <section class="contact">
+      <div class="landing">
+        <img src="../img/bg2.png" alt="img" />
+        <div class="container">
+          <div class="text">
+            <h3>السعر</h3>
+            <p>
+              يمكنك الاتصال بنا على مدار الساعة والتواصل معنا وسيتم الرد مباشر
+            </p>
+          </div>
         </div>
-        <div class="box-video">
-          <p>شاهد</p>
-          <button
-            class="btn-vid"
-            type="button"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            <i class="fas fa-play"></i>
-          </button>
-        </div>
-      </div>
-      <div class="shape">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1000 100"
-          preserveAspectRatio="none"
-        >
-          <path
-            class="elementor-shape-fill"
-            d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"
-          ></path>
-        </svg>
       </div>
     </section>
-    <!-- End Landing -->
-    <!-- Modal videp -->
-    <div
-      class="modal modal-video-wrapper fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <button type="button" class="video-close" data-bs-dismiss="modal">
-            <i class="fas fa-xmark"></i>
-          </button>
-          <iframe
-            src="https://www.youtube.com/embed/7BGNAGahig8?autoplay=1"
-            frameborder="0"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-    <!-- start top services -->
-    <section class="services" data-aos="fade-up">
+    <!-- start service -->
+    <section class="price">
       <div class="container">
-        <div class="con-services row d-flex justify-content-between">
-          <div class="col-12 col-lg-4 col-md-6">
-            <div class="serve text-center mx-auto">
-              <i class="fa-solid fa-people-group icon-serve"></i>
-              <h3>مدرب محترف</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore
-              </p>
-              <span class="btn-info">
-                <i class="fa-solid fa-arrow-right px-2"></i>قراءة المزيد
-              </span>
+        <div class="row gap-3">
+          <div class="col-12 col-md-6 col-lg-4 card-serve">
+            <span> 12 حصص ركوب خيل ارضي لفرسان المستقبل لمدة شهر </span>
+            <div class="image">
+              <img src="../img/serve1.jpg" alt="" />
             </div>
-          </div>
-          <div class="col-12 col-lg-4 col-md-6 serve-md active">
-            <div class="serve text-center mx-auto">
-              <i class="fa-solid fa-horse-head icon-serve"></i>
-              <h3>أفضل ركوب خيل</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore
-              </p>
-              <span class="btn-info">
-                <i class="fa-solid fa-arrow-right px-2"></i>قراءة المزيد
-              </span>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 col-md-6">
-            <div class="serve text-center mx-auto">
-              <i class="fa-regular fa-thumbs-up icon-serve"></i>
-              <h3>ضمان الرضا</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore
-              </p>
-              <span class="btn-info">
-                <i class="fa-solid fa-arrow-right px-2"></i>قراءة المزيد
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end top services -->
-    <!-- start bottom services -->
-    <section class="bottom-services">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="box">
-              <div class="image">
-                <img src="/img/serve1.jpg" alt="img" />
-              </div>
-              <div class="content">
-                <div class="icon">
-                  <i class="fa-solid fa-horse-head horse"></i>
+            <div class="text">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="div d-flex">
+                    <p>السعر</p>
+                    <span>1950</span>
+                  </div>
                 </div>
-                <div class="text">
-                  <h3>حجز حصه مفرده</h3>
-                  <p>بكجات تدريب الخيل قفز حواجز فوق 18سنه ...</p>
+                <div class="col-12 col-lg-6">
+                  <p>عدد الحصص : 16</p>
+                </div>
+                <div class="col-12 col-lg-8 mt-2">
+                  <div class="d-flex text-2">
+                    <p>مدة الاشتراك :</p>
+                    <h3>30 يوما</h3>
+                  </div>
                 </div>
               </div>
-              <a href="/pages/price.html">
+            </div>
+            <div class="text-sub d-flex align-items-center justify-content-center p-3">
+              <a href="/pages/service-sub.html">
                 اشترك الان <i class="fa-solid fa-arrow-left"></i
               ></a>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="box">
-              <div class="image">
-                <img src="/img/serve2.jpg" alt="img" />
-              </div>
-              <div class="content">
-                <div class="icon">
-                  <i class="fa-solid fa-hat-cowboy-side horse"></i>
+          <div class="col-12 col-md-6 col-lg-4 card-serve">
+            <span> 12 حصص ركوب خيل ارضي لفرسان المستقبل لمدة شهر </span>
+            <div class="image">
+              <img src="../img/serve1.jpg" alt="" />
+            </div>
+            <div class="text">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="div d-flex">
+                    <p>السعر</p>
+                    <span>1950</span>
+                  </div>
                 </div>
-                <div class="text">
-                  <h3>حجز حصه مفرده</h3>
-                  <p>بكجات تدريب الخيل قفز حواجز فوق 18سنه ...</p>
+                <div class="col-12 col-lg-6">
+                  <p>عدد الحصص : 16</p>
+                </div>
+                <div class="col-12 col-lg-8 mt-2">
+                  <div class="d-flex text-2">
+                    <p>مدة الاشتراك :</p>
+                    <h3>30 يوما</h3>
+                  </div>
                 </div>
               </div>
-              <a href="/pages/price.html">
+            </div>
+            <div class="text-sub d-flex align-items-center justify-content-center p-3">
+              <a href="/pages/service-sub.html">
                 اشترك الان <i class="fa-solid fa-arrow-left"></i
               ></a>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="box">
-              <div class="image">
-                <img src="/img/serve3.jpg" alt="img" />
-              </div>
-              <div class="content">
-                <div class="icon">
-                  <i class="fa-solid fa-horse horse"></i>
+          <div class="col-12 col-md-6 col-lg-4 card-serve">
+            <span> 12 حصص ركوب خيل ارضي لفرسان المستقبل لمدة شهر </span>
+            <div class="image">
+              <img src="../img/serve1.jpg" alt="" />
+            </div>
+            <div class="text">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="div d-flex">
+                    <p>السعر</p>
+                    <span>1950</span>
+                  </div>
                 </div>
-                <div class="text">
-                  <h3>حجز حصه مفرده</h3>
-                  <p>بكجات تدريب الخيل قفز حواجز فوق 18سنه ...</p>
+                <div class="col-12 col-lg-6">
+                  <p>عدد الحصص : 16</p>
+                </div>
+                <div class="col-12 col-lg-8 mt-2">
+                  <div class="d-flex text-2">
+                    <p>مدة الاشتراك :</p>
+                    <h3>30 يوما</h3>
+                  </div>
                 </div>
               </div>
-              <a href="/pages/price.html">
+            </div>
+            <div class="text-sub d-flex align-items-center justify-content-center p-3">
+              <a href="/pages/service-sub.html">
                 اشترك الان <i class="fa-solid fa-arrow-left"></i
               ></a>
             </div>
@@ -246,7 +185,6 @@
         </div>
       </div>
     </section>
-    <!-- start bottom services -->
     <!-- start footer -->
     <section class="footer" data-aos="fade-up">
       <div class="container">
@@ -270,6 +208,7 @@
                   <img src="/img/Mobile app store badge (1).png" alt="img" />
                   <img src="/img/Mobile app store badge.png" alt="img" />
                 </div>
+                
               </div>
             </div>
           </div>
@@ -323,7 +262,7 @@
                 خدماتنا وبرامجنا.
               </p>
               <form class="input">
-                <input type="text" placeholder="البريد الالكتروني" />
+                <input type="text" placeholder="البريد الالكتروني">
                 <label for=""><a href="">اشتراك</a></label>
               </form>
               <div class="social">
@@ -355,8 +294,8 @@
       AOS.init();
     </script>
     <!-- Js Files -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/all.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

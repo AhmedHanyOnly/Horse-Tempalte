@@ -1,0 +1,93 @@
+.service-sub {
+  min-height: 100vh;
+  .bg-sub {
+    box-shadow: 0 0 10px #ddd;
+    border: 1px solid #dfdfdf;
+    margin: 100px 50px;
+    padding: 20px;
+    border-radius: 10px;
+    @include maxWidth(sm) {
+      margin: 100px 0;
+    }
+    .header {
+      background-color: $sec-color;
+      ul {
+        display: flex;
+        list-style-type: "/";
+        li {
+          color: #fff;
+          font-size: 18px;
+          padding: 10px;
+        }
+      }
+      @include maxWidth(md) {
+        border-radius: 5px;
+        ul {
+          display: flex;
+          list-style-type: "/";
+          flex-direction: column;
+          li {
+            color: #fff;
+            font-size: 14px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+    .image {
+      padding: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      display: flex;
+      gap: 5px;
+      margin: 10px 20px;
+      border-top: 3px solid #f3f3f3;
+      border-bottom: 3px solid #f3f3f3;
+      padding: 10px 0 5px;
+      span {
+        font-size: 24px;
+        // padding: 5px;
+        color: #da193e;
+      }
+      p {
+        font-size: 25px;
+        padding: 0;
+      }
+    }
+    .text-sub {
+      p {
+        padding: 0;
+      }
+      h3 {
+        padding: 0;
+      }
+    }
+    h3 {
+      padding: 10px;
+    }
+    a{
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      border: 2px solid $sec-color;
+      color: $sec-color;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: 0.3s;
+      .fa-arrow-left{
+        font-size: 18px;
+        padding: 5px;
+      }
+      &:hover{
+        background-color: $sec-color;
+        color: #fff;
+      }
+    }
+  }
+}

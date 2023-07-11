@@ -1,6 +1,10 @@
 {
   "liveSassCompile.settings.partialsList": [
     "/**/_*.s[ac]ss",
-    "/**/contact-us.scss"
+    "/**/contact-us.scss",
+    "/**/service.scss",
+    "/**/about-us.scss",
+    "/**/price.scss",
+    "/**/service-sub.scss"
   ]
 }
