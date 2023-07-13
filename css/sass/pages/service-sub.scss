@@ -76,17 +76,18 @@
       justify-content: center;
       gap: 15px;
       border: 2px solid $sec-color;
-      color: $sec-color;
+      color: #fff;
       border-radius: 5px;
       font-size: 16px;
       transition: 0.3s;
+      background-color: $sec-color;
       .fa-arrow-left{
         font-size: 18px;
         padding: 5px;
       }
       &:hover{
-        background-color: $sec-color;
-        color: #fff;
+        background-color: #fff;
+        color: $sec-color;
       }
     }
   }

@@ -49,9 +49,23 @@ button {
 .main-header .container-xl .content {
   flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0px 50px 0px 10px;
+}
+.main-header .container-xl .content .log-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-header .container-xl .content .log-section .image {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.main-header .container-xl .content .log-section .image img {
+  width: 100%;
+  border-radius: 50%;
 }
 .main-header .container-xl .content .top-nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1411764706);
@@ -266,7 +280,7 @@ button {
 }
 
 .section-landing {
-  background-image: url("/img/landing.jpg");
+  background-image: url("../../../img/landing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -517,6 +531,72 @@ button {
   box-shadow: 2px 3px 10px #ddd;
   padding: 20px;
   border-radius: 5px;
+  position: relative;
+}
+.bottom-services .box .check {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+.bottom-services .box .check .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.bottom-services .box .check .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.bottom-services .box .check .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 1px solid #fff;
+}
+.bottom-services .box .check .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.bottom-services .box .check .container input:checked ~ .checkmark {
+  background-color: #ffc251;
+}
+.bottom-services .box .check .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.bottom-services .box .check .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.bottom-services .box .check .container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: 3px solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .bottom-services .box .image img {
   border-radius: 5px;
@@ -675,8 +755,9 @@ button {
 }
 .footer .con-footer {
   position: relative;
-  padding: 10px;
+  padding: 0px;
   margin: 0 0 50px;
+  font-size: 12px;
 }
 .footer .con-footer img {
   width: 150px;
@@ -711,9 +792,7 @@ button {
   margin: 20px 0;
 }
 .footer .con-footer ul li {
-  margin: 3px 0;
   padding: 10px;
-  margin: 10px 0;
 }
 .footer .con-footer ul li span {
   font-size: 18px;
@@ -726,7 +805,7 @@ button {
 .footer .con-footer ul li a {
   padding: 10px;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
 }
 .footer .con-footer ul .list-items {
   padding: 0;
@@ -1165,16 +1244,149 @@ button {
   justify-content: center;
   gap: 15px;
   border: 2px solid #ffc251;
-  color: #ffc251;
+  color: #fff;
   border-radius: 5px;
   font-size: 16px;
   transition: 0.3s;
+  background-color: #ffc251;
 }
 .service-sub .bg-sub a .fa-arrow-left {
   font-size: 18px;
   padding: 5px;
 }
 .service-sub .bg-sub a:hover {
-  background-color: #ffc251;
+  background-color: #fff;
+  color: #ffc251;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.login .log-box {
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 2px 3px 20px #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+}
+@media (max-width: 991.98px) {
+  .login .log-box .input-box {
+    width: 400px !important;
+    margin: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .login .log-box p {
+    font-size: 14px !important;
+  }
+  .login .log-box h3 {
+    padding: 30px;
+    font-size: 24px !important;
+  }
+  .login .log-box .input-box {
+    width: 250px !important;
+    margin: 20px;
+  }
+  .login .log-box .text-sign a {
+    font-size: 10px !important;
+  }
+}
+.login .log-box p {
+  font-size: 18px;
+}
+.login .log-box h3 {
+  padding: 30px;
+  font-size: 35px;
+}
+.login .log-box .input-box {
+  width: 600px;
+  margin: 20px;
+}
+.login .log-box .text-sign {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.login .log-box .text-sign a {
+  font-size: 14px;
+  margin: 20px 0;
+  color: #ffc251;
+}
+.login .log-box .text-sign a:hover {
+  color: rgba(255, 194, 81, 0.5);
+}
+.login .log-box .btn-sign {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  border: 2px solid #ffc251;
   color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+  background-color: #ffc251;
+}
+.login .log-box .btn-sign .fa-arrow-left {
+  font-size: 18px;
+  padding: 5px;
+}
+.login .log-box .btn-sign:hover {
+  background-color: #fff;
+  color: #ffc251;
+}
+
+.request .head {
+  margin: 50px 0;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px #f3f3f3 solid;
+}
+.request .head h3 {
+  font-weight: 600;
+}
+.request .box {
+  display: flex;
+  gap: 50px;
+  box-shadow: 2px 3px 10px #ddd;
+  padding: 30px;
+  background: linear-gradient(45deg, #1a1a1a, #939393, #ddd);
+  border-radius: 20px;
+  color: #fff;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+.request .box:hover .icons {
+  scale: 1.2;
+}
+.request .box .text h3 {
+  font-size: 35px;
+}
+.request .box .text p {
+  font-size: 17px;
+}
+.request .box .icons {
+  font-size: 60px;
+  transition: 0.3s;
+  padding: 10px;
+}
+.request .table-content .head-table {
+  margin: 30px 0 20px;
+}
+@media (max-width: 767.98px) {
+  .request .table-content .table-bordered {
+    font-size: 6px;
+  }
+  .request .table-content .table-bordered tbody a {
+    font-size: 6px;
+    padding: 2px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -6,7 +6,6 @@
     display: flex;
     .logo {
       z-index: 900;
-
       width: 100px;
       @include maxWidth(md) {
         width: 100px;
@@ -19,9 +18,23 @@
     .content {
       flex: 1;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       margin: 0px 50px 0px 10px;
+      .log-section{
+        display: flex; justify-content: center;
+        align-items: center;
+        .image{
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          // padding-top: 40px;
+          img{
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+      }
       .top-nav {
         border-bottom: 1px solid #ffffff24;
         margin-top: 15px;
@@ -82,6 +95,7 @@
             color: black;
           }
         }
+        
       }
       .bottom-nav {
         z-index: 900;

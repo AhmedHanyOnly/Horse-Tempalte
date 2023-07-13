@@ -10,8 +10,9 @@
   }
   .con-footer {
     position: relative;
-    padding: 10px;
+    padding: 0px;
     margin: 0 0 50px;
+    font-size: 12px;
     img {
       width: 150px;
       position: absolute;
@@ -48,9 +49,7 @@
       list-style: none;
       margin: 20px 0;
       li {
-        margin: 3px 0;
         padding: 10px;
-        margin: 10px 0;
         span {
           font-size: 18px;
         }
@@ -62,7 +61,7 @@
         a {
           padding: 10px;
           color: #fff;
-          font-size: 18px;
+          font-size: 14px;
         }
       }
       .list-items{

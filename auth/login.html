@@ -56,36 +56,25 @@
               <a href="../index.html" class="link active"> الرئيسية </a>
             </li>
             <li>
-              <a href="./about-us.html" class="link"> من نحن </a>
+              <a href="../pages/about-us.html" class="link"> من نحن </a>
             </li>
             <li>
-              <a href="./service.html" class="link"> خطط الاشتراك </a>
+              <a href="../pages/service.html" class="link"> خطط الاشتراك </a>
             </li>
             <li>
-              <a href="./riders.html" class="link"> المدربين</a>
+              <a href="../pages/riders.html" class="link"> المدربين</a>
             </li>
             <li>
-              <a href="./contact-us.html" class="link"> أتصل بنا </a>
+              <a href="../pages/contact-us.html" class="link"> أتصل بنا </a>
             </li>
           </ul>
-          <div class="log-section d-flex">
-            <div style="
-            width: 35px;
-            ">
-              <button class="btn btn-outline-warning  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 14px;
-              padding: 4px;">احمد </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">ملف شخصي</a></li>
-                <li><a class="dropdown-item" href="./service-requecet.html">اشتراكي </a></li>
-                <li><a class="dropdown-item" href="#">حجز موعد</a></li>
-                <li><a class="dropdown-item " href="#">حجوزات المربين </a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item btn-outline-warning" href="../auth/noLog.html">تسجيل  خروج </a></li>
-              </ul>
-            </div>
-            <!-- <div class="image">
-              <img src="./img/pic.png" alt="">
-            </div> -->
+          <div class="log-section d-flex gap-4">
+            <a href="./login.html" class="btn btn-outline-warning "
+              >دخول</a
+            >
+            <a href="./signup.html" class="btn btn-outline-warning "
+              >تسجيل</a
+            >
           </div>
           <button class="open-menu" id="add-active" data-active=".bottom-nav">
             <i class="fas fa-bars"></i>
@@ -94,64 +83,38 @@
       </div>
     </header>
     <!-- End Header -->
-    <section class="contact">
-      <div class="landing">
-        <img src="../img/bg2.png" alt="img" />
-        <div class="container">
-          <div class="text">
-            <h3>اتصل بنا</h3>
-            <p>
-              يمكنك الاتصال بنا على مدار الساعة والتواصل معنا وسيتم الرد مباشر
-            </p>
+    <body>
+      <div class="container">
+          <section class="login" style="min-height: 100vh">
+
+            <div class="log-box">
+              <h3>تسجيل الدخول</h3>
+              <form action="" class="">
+                <div class="col-12 input-box">
+                  <p> البريد الالكتروني</p>
+                  <input type="text" class="form-control" placeholder="يرجي كتابة بريدك الالكتروني "/>
+                </div>
+                <div class="col-auto input-box">
+                  <p>كلمه السر</p>
+                  <input type="password"  class="form-control " placeholder="يرجي كتابة كلمه السر الخاصة بك "/>
+                </div>
+                <div class="col-12 input-box">
+                  <input type="checkbox" name="" id="" />
+                  <label for=""> ذكرني لاحقا</label>
+                </div>
+                <div class="text-sign">
+                  <a href="#">قمت بتسجيل عضوية جديدة</a>
+                  <a href="#">هل نسيت كمله السر؟</a>
+                </div>
+                <a href="../pages/service-sub.html" class="btn-sign">
+                   دخول <i class="fa-solid fa-arrow-left"></i
+                ></a>
+              </form>
+
           </div>
+        </section>
         </div>
-      </div>
-      <div class="control ">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-6">
-              <div class="inputs" data-aos="fade-left" >
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label "> الاسم</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="الاسم">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">البريد الالكتروني</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="قم بكتابة بريدك الالكتروني للتواصل">
-                </div>
-    
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">الاهمية</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                </div>
-    
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">عنوان الرسالة</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                </div>
-    
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">محتوي الرسالة</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <a href="#" class="btn btn-mess">ارسال</a>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6">
-              <div class="contact-text" data-aos="fade-right" data-aos-delay="300">
-                <h3>وسائل الاتصال بنا</h3>
-                <div class=" bg-contact d-flex flex-column">
-                  <span><i class="fa-solid fa-phone icon-contact"></i> الهاتف : 0506499275</span>
-                  <span><i class="fa-solid fa-headphones icon-contact"></i>الدولي : 966506499275</span>
-                  <span><i class="fa-solid fa-paper-plane icon-contact"></i>البريد الإلكتروني : sales@const-tech.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
+    </body>
     <!-- start footer -->
     <section class="footer" data-aos="fade-up">
       <div class="container">
@@ -175,7 +138,6 @@
                   <img src="../img/Mobile app store badge (1).png" alt="img" />
                   <img src="../img/Mobile app store badge.png" alt="img" />
                 </div>
-                
               </div>
             </div>
           </div>
@@ -224,7 +186,7 @@
                 خدماتنا وبرامجنا.
               </p>
               <form class="input">
-                <input type="text" placeholder="البريد الالكتروني">
+                <input type="text" placeholder="البريد الالكتروني" />
                 <label for=""><a href="">اشتراك</a></label>
               </form>
               <div class="social">
@@ -250,14 +212,14 @@
       </div>
     </section>
     <!-- end footer -->
-      <!-- aos file -->
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
+    <!-- aos file -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Js Files -->
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/all.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/all.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

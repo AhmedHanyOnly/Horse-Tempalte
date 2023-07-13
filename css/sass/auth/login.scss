@@ -1,0 +1,89 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  .log-box {
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 2px 3px 20px #ddd;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    @include maxWidth(md) {
+      // max-width: 400px;
+      .input-box {
+        width: 400px !important;
+        margin: 20px;
+      }
+    }
+    @include maxWidth(sm) {
+      // max-width: 400px;
+      p {
+        font-size: 14px !important;
+      }
+      h3 {
+        padding: 30px;
+        font-size: 24px !important;
+      }
+      .input-box {
+        width: 250px !important;
+        margin: 20px;
+      }
+      .text-sign {
+        a {
+          font-size: 10px !important;
+        }
+      }
+    }
+    p {
+      font-size: 18px;
+    }
+    h3 {
+      padding: 30px;
+      font-size: 35px;
+    }
+    .input-box {
+      width: 600px;
+      margin: 20px;
+    }
+    .text-sign {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      a {
+        font-size: 14px;
+        margin: 20px 0;
+        color: $sec-color;
+        &:hover {
+          color: rgb(255, 194, 81, 0.5);
+        }
+      }
+    }
+    .btn-sign {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      border: 2px solid $sec-color;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: 0.3s;
+      background-color: $sec-color;
+      .fa-arrow-left {
+        font-size: 18px;
+        padding: 5px;
+      }
+      &:hover {
+        background-color: #fff;
+        color: $sec-color;
+      }
+    }
+  }
+}

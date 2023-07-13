@@ -1,0 +1,56 @@
+.request {
+  .head {
+    margin: 50px 0;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px #f3f3f3 solid;
+    h3 {
+      font-weight: 600;
+    }
+  }
+  .box {
+    display: flex;
+    gap: 50px;
+    box-shadow: 2px 3px 10px #ddd;
+    padding: 30px;
+    background: linear-gradient(45deg, $main-color, #939393, #ddd);
+    border-radius: 20px;
+    color: #fff;
+    margin: 10px 0;
+    transition: 0.3s;
+    &:hover {
+      .icons {
+        scale: 1.2;
+      }
+    }
+    .text {
+      h3 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 17px;
+      }
+    }
+    .icons {
+      font-size: 60px;
+      transition: 0.3s;
+      padding: 10px;
+    }
+  }
+  .table-content {
+    .head-table {
+      margin: 30px 0 20px;
+    }
+    .table-bordered {
+      @include maxWidth(sm) {
+        font-size: 6px;
+        tbody {
+          a {
+            font-size: 6px;
+            padding: 2px;
+          }
+        }
+      }
+    }
+  }
+}

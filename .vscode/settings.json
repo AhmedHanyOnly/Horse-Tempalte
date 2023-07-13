@@ -5,6 +5,9 @@
     "/**/service.scss",
     "/**/about-us.scss",
     "/**/price.scss",
-    "/**/service-sub.scss"
+    "/**/service-sub.scss",
+    "/**/login.scss",
+    "/**/sign.scss",
+    "/**/request.scss"
   ]
 }
