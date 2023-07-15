@@ -69,18 +69,33 @@
             </li>
           </ul>
           <div class="log-section d-flex">
-            <div style="
-            width: 35px;
-            ">
-              <button class="btn btn-outline-warning  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 14px;
-              padding: 4px;">احمد </button>
+            <div style="width: 35px">
+              <button
+                class="btn btn-outline-warning dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="font-size: 14px; padding: 4px"
+              >
+                احمد
+              </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">ملف شخصي</a></li>
-                <li><a class="dropdown-item" href="./service-requecet.html">اشتراكي </a></li>
+                <li>
+                  <a class="dropdown-item" href="./service-requecet.html"
+                    >اشتراكي
+                  </a>
+                </li>
                 <li><a class="dropdown-item" href="#">حجز موعد</a></li>
-                <li><a class="dropdown-item " href="#">حجوزات المربين </a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item btn-outline-warning" href="../auth/noLog.html">تسجيل  خروج </a></li>
+                <li><a class="dropdown-item" href="#">حجوزات المربين </a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item btn-outline-warning"
+                    href="../auth/noLog.html"
+                    >تسجيل خروج
+                  </a>
+                </li>
               </ul>
             </div>
             <!-- <div class="image">
@@ -103,30 +118,63 @@
               <li>الاقسام</li>
               <li>بكجات لتدريب الخيل ارضي اقل 18 سنه</li>
               <li>12 حصه ركوب خيل ارضي لفرسان المستقبل لمدة شهر</li>
+              <li>اشتراك</li>
             </ul>
           </div>
           <div class="row row-cols-2">
-            <div class="col-12 col-lg-4">
-              <div class="image">
-                <img src="../img/serve2.jpg" alt="img" />
+            <div class="col-12 col-lg-8">
+              <div class="text-request-head">
+                <h3>12 حصه ركوب خيل ارضي لفرسان المستقبل لمدة شهر</h3>
               </div>
-              <div class="text">
+              <div class="text-con d-flex gap-5 mt-3"></div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="text-request">
+                <p>المبلغ المطلوب :</p>
                 <span>1550</span>
                 <p>ريال</p>
               </div>
             </div>
-            <div class="col-12 col-lg-8">
-              <h3>12 حصه ركوب خيل ارضي لفرسان المستقبل لمدة شهر</h3>
-              <div class="text-con d-flex gap-5 mt-3">
-                <div class="text-sub d-flex flex-column">
-                  <p>عدد الحصص</p>
-                  <h3>8</h3>
+            <div class="col-12">
+              <fieldset class="row mb-3">
+                <div class="form mt-2 mb-4">
+                  <label for="" class="form-label title-input">المدرب</label>
+                  <select name="" id="" class="form-select">
+                    <option value="" class="">خالد</option>
+                    <option value="">...</option>
+                  </select>
                 </div>
-                <div class="text-sub d-flex flex-column">
-                  <p>مدة الاشتراك</p>
-                  <h3>30 يوما</h3>
+                <legend class="col-form-label  col-sm-2 pt-0 title-input">
+                  طريقة حضور التدريب
+                </legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="gridRadios1"
+                      value="option1"
+                      checked
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      حر (يمكنك الحضور اي وقت اثناء عمل الاسطبل)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="gridRadios2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      تحديد ايام
+                    </label>
+                  </div>
                 </div>
-              </div>
+              </fieldset>
             </div>
             <div class="col-12">
               <h3>شروط الاشتراك</h3>
@@ -135,7 +183,8 @@
                   <p>لا نستقبل اشتراكات او كلاسات افراد شباب فقط عوائل .</p>
                   <p>مدة الإشتراك المتفق عليها شهر واحد من تاريخه.</p>
                   <p>
-                    نوفر للفارس او الفارسه الخيل التي سيتدرب عليها و كذلك المدرب.
+                    نوفر للفارس او الفارسه الخيل التي سيتدرب عليها و كذلك
+                    المدرب.
                   </p>
                   <p>مدة الحصة الواحدة من 30 دقيقة إلى 40 دقيقة.</p>
                   <p>التقيد بزي الفروسية.</p>
@@ -145,8 +194,8 @@
                 </div>
                 <div class="col-12 col-lg-6">
                   <p>
-                    إلغاء الكلاس قبل 2 ساعات وفي حالة لم يتم إلغاء الموعد أو الحضور
-                    يحسم من الكلاس .
+                    إلغاء الكلاس قبل 2 ساعات وفي حالة لم يتم إلغاء الموعد أو
+                    الحضور يحسم من الكلاس .
                   </p>
                   <p>
                     وفي حالة تم دفع مبلغ الإشتراك لا يحق استرجاع أو مطالبه مبلغ
@@ -158,9 +207,8 @@
                   </p>
                 </div>
               </div>
-              
-              
-              <a href="./package_requests.html">  اشترك الان <i class="fa-solid fa-arrow-left"></i></a>
+
+              <a href="#"> اشترك الان <i class="fa-solid fa-arrow-left"></i></a>
             </div>
           </div>
         </div>
@@ -189,7 +237,6 @@
                   <img src="../img/Mobile app store badge (1).png" alt="img" />
                   <img src="../img/Mobile app store badge.png" alt="img" />
                 </div>
-                
               </div>
             </div>
           </div>
@@ -207,7 +254,7 @@
                 <li>
                   <i class="fa-solid fa-share cross"></i><a href="#">خدماتنا</a>
                 </li>
-                
+
                 <li>
                   <i class="fa-solid fa-share cross"></i><a href="#">اتصال</a>
                 </li>
@@ -238,7 +285,7 @@
                 خدماتنا وبرامجنا.
               </p>
               <form class="input">
-                <input type="text" placeholder="البريد الالكتروني">
+                <input type="text" placeholder="البريد الالكتروني" />
                 <label for=""><a href="">اشتراك</a></label>
               </form>
               <div class="social">

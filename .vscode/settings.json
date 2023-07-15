@@ -8,6 +8,7 @@
     "/**/service-sub.scss",
     "/**/login.scss",
     "/**/sign.scss",
-    "/**/request.scss"
+    "/**/request.scss",
+    "/**/package_requests.scss"
   ]
 }
